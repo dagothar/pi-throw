@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Throwing Pi</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="styles/main.css"/>
+</head>
+
+<body>
+  <div class="header">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<a class="navbar-brand text-center center-block" href="#">THROWING PI</a>
+			</div>
+		</nav>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-9">
+        <center><canvas class="board" width="300" height="300"></canvas></center>
+      </div>
+      
+      <div class="col-md-3">
+        <div class="form-group">
+          <button type="button" class="throwpi-reset btn btn-default btn-block">Reset</button>
+          <button type="button" class="throwpi-step btn btn-default btn-block">Step</button>
+          <button type="button" class="throwpi-start-stop btn btn-default btn-block">Start/Stop</button>
+        </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Results
+          </div>
+          <div class="panel-body">
+            <p>Throws: <span class="pull-right throwpi-throws">0</span></p>
+            <p>Inside the circle: <span class="pull-right throwpi-hits">0</span></p>
+            <p class="text-success">Current estimate for pi: <span class="pull-right throwpi-pi">0</span></p>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="footer">
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="scripts/throw_pi.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
