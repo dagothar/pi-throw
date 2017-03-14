@@ -25,10 +25,10 @@ $(document).ready(function() {
   
   /* Draw board */
   function drawBoard() {
-    context.beginPath();
-    context.strokeStyle = '#ffffff';
-    context.rectFill(0, 0, canvas.width, canvas.height);
-    context.fill();
+    //context.beginPath();
+    context.fillStyle = '#ffffff';
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    //context.fill();
     context.beginPath();
     context.strokeStyle = '#00ff00';
     context.arc(canvas.width/2, canvas.height/2, radius, 0, 2 * Math.PI);
