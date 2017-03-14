@@ -90,6 +90,9 @@ $(document).ready(function() {
   
   /* Resets the board */
   $('.throwpi-reset').click(function() {
+    clearInterval(stepTimer);
+    running = false;
+    
     throws = 0;
     hits = 0;
     pi = 0.0;
