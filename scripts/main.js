@@ -27,7 +27,7 @@ $(document).ready(function() {
   function drawBoard() {
     context.beginPath();
     context.strokeStyle = '#ffffff';
-    context.rect(0, 0, canvas.width, canvas.height);
+    context.rectFill(0, 0, canvas.width, canvas.height);
     context.fill();
     context.beginPath();
     context.strokeStyle = '#00ff00';
