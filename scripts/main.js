@@ -70,6 +70,7 @@ $(document).ready(function() {
   
   /* Automatically throws a dart */
   function shoot() {
+    if (!running) return;
     var x = Math.random() * canvas.width;
     var y = Math.random() * canvas.height;
     step(x, y);
