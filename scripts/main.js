@@ -45,7 +45,7 @@ $(document).ready(function() {
   function step(x, y) {
     var dx = x - canvas.width/2;
     var dy = y - canvas.height/2;
-    console.log(dx, dy);
+    //console.log(dx, dy);
     
     /* is it hit or miss? */
     if (Math.abs(dx) < radius && Math.abs(dy) < radius) {
@@ -130,7 +130,7 @@ $(document).ready(function() {
   $('.board').mousedown(function(e) {
     var pos = getMousePos(e, canvas);
     step(pos.x, pos.y);
-    console.log(pos);
+    //console.log(pos);
   });
   
 });
